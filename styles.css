@@ -5,18 +5,16 @@ form{
     /*margin-top: 20px;*/
     /*margin-left: 15rem;*/
     position: absolute;
+    background-color: #300446;
     margin: 5% 30%;
     width: 31rem;
-    border: 3px solid #f1f1f1;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;
 }
 body{
-    background-image: url("purplebg2.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #350a4b;
 }
-input[type=password], input[type=email]{
+input[type=password], input[type=email],input[type=text]{
     width: 200px;
     border-radius: 5px;
     padding: 12px 20px;
@@ -24,6 +22,31 @@ input[type=password], input[type=email]{
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+.container{
+    margin-left: 125px;
+}
+.sgn-up-and-forgot-email a{
+    text-decoration: none;
+}
+.select-box{
+    position: absolute;
+    background-color: #300446;
+    margin: 5% 30%;
+    width: 31rem;
+    border-radius: 10px;
+    align-items: center;
+}
+.select-box .container button{
+    background-color: #04aa6d;
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+
 }
 button{
     background-color: #04aa6d;
@@ -37,19 +60,21 @@ button{
 button:hover{
     opacity: 0.8;
 }
-.sgn-up-and-forgot-email p{
-    text-align: center;
-}
-.sgn-up-and-forgot-email a{
-    text-decoration: none;
-}
+/*.sgn-up-and-forgot-email p{*/
+/*    text-align: center;*/
+/*}*/
+/*.sgn-up-and-forgot-email a{*/
+/*    text-decoration: none;*/
+/*}*/
 .imgcontainer h2{
     text-align: center;
     font-family: "JetBrains Mono Medium", serif;
 }
 .imgcontainer{
     text-align: center;
-    margin: 50px 0 25px 0;
+    padding-top: 5%;
+
+    /*margin: 50px 0 25px 0;*/
 }
 img.avatar{
     width: 80px;
@@ -58,34 +83,33 @@ img.avatar{
 .container{
     padding: 16px;
 }
+.container p{
+    color: lightgreen;
+}
 span.psw{
     float: right;
     padding-top: 16px;
 }
-
-@media screen and (max-width: 300px){
-    span.psw{
-        display: block;
-        float: none;
-    }
-    .cancelbtn{
-        width: 100%;
-    }
-}
-
 body{
     margin: 0;
     padding: 0;
 }
+form{
+    display: block;
+    background-size: cover;
+    position: relative;
+}
+h2, .sgn-up-and-forgot-email p{
+    color: lightgreen;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: white;
     background-color: #653780;
 }
-.brand-title{
-    font-size: 1.5rem;
+.brand-title p{
+    align-items: center;
     margin: 0.5rem;
 }
 .navbar-links ul{
@@ -104,6 +128,11 @@ body{
 }
 .navbar-links li:hover{
     background-color: #5296d5;
+}
+.navbar img{
+    height: 2.3rem;
+    width: auto;
+    vertical-align: middle;
 }
 .toggle-button{
     position: absolute;
@@ -145,5 +174,15 @@ body{
     }
     .navbar-links.active{
         display: flex;
+    }
+    span.psw{
+        display: block;
+        float: none;
+    }
+    .cancelbtn{
+        width: 100%;
+    }
+    form{
+        margin-left: 2%;
     }
 }
