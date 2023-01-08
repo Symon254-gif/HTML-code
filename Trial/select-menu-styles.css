@@ -28,20 +28,27 @@
 }
 #selectField img{
     width: 12px;
+    transition: 0.5s;
 }
-.list{
+#list{
     background: rgba(255,255,255,0.7);
     width: 100%;
     overflow: hidden;
     border-radius: 6px;
 }
-.list li{
+#list li{
     width: 100%;
     padding: 15px;
     list-style: none;
     box-sizing: border-box;
     cursor: pointer;
 }
-.list li:hover{
+#list li:hover{
     background: rgba(255,255,255,0.7);
+}
+.hide{
+    visibility: hidden;
+}
+.rotate{
+    transform: rotate(180deg);
 }

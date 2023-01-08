@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 form{
-    /*margin-top: 20px;*/
-    /*margin-left: 15rem;*/
+    display: flex;
     position: absolute;
     background-color: #300446;
     margin: 5% 30%;
@@ -12,7 +11,8 @@ form{
     align-items: center;
 }
 body{
-    background-color: #350a4b;
+    background: linear-gradient(#163c62, #481665) no-repeat;
+    background-size: cover;
 }
 input[type=password], input[type=email],input[type=text]{
     width: 200px;
@@ -60,12 +60,6 @@ button{
 button:hover{
     opacity: 0.8;
 }
-/*.sgn-up-and-forgot-email p{*/
-/*    text-align: center;*/
-/*}*/
-/*.sgn-up-and-forgot-email a{*/
-/*    text-decoration: none;*/
-/*}*/
 .imgcontainer h2{
     text-align: center;
     font-family: "JetBrains Mono Medium", serif;
@@ -73,8 +67,6 @@ button:hover{
 .imgcontainer{
     text-align: center;
     padding-top: 5%;
-
-    /*margin: 50px 0 25px 0;*/
 }
 img.avatar{
     width: 80px;
@@ -185,4 +177,40 @@ h2, .sgn-up-and-forgot-email p{
     form{
         margin-left: 2%;
     }
+}
+.select-menu h1, .select-menu h3{
+    margin: 15px;
+}
+.medic-select-box{
+    display: flex;
+    width: 95%;
+}
+.medic-select-box .options-container{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    background: #7c26a4;
+    color: #cccccc;
+    opacity: 0;
+    width: 100%;
+    transition: all 0.5s;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.medic-select-box .options, .selected{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.medic-select-box .options:hover{
+    background: #5296d5;
+}
+.medic-select-box label{
+    cursor: pointer;
+}
+.medic-select-box .options .radio{
+    display: none;
+}
+.medic-select-box.options-container.active{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
 }

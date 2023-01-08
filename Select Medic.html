@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <title>Select Medic</title>
-  <meta charset="UTF-8">
-  <link rel="icon" href="logo.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+    <title>Select Medic</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 <nav class="navbar">
-  <div class="brand-title"><p><img src="logo.png" alt="">Dekut Medical Website</p></div>
-  <a href="#" class="toggle-button">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </a>
-  <div class="navbar-links">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
-  </div>
+    <div class="brand-title"><p><img src="logo.png" alt="">Dekut Medical Website</p></div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
 </nav>
 <form method="post">
-  <div class="container">
-    <p>Select Medic:
-    <select name="occupation">
-      <option value="optician">Optician</option>
-      <option value="Gynaecologist">Gynaecologist</option>
-      <option value="psychiatrist">Psychiatrist</option>
-      <option value="physician">Physician</option>
-    </select></p>
-    <p><label for="describe">Describe your issue:</label></p>
-    <textarea id="describe" name="describe" ></textarea>
-    <br>
-    <input type="submit" value="Submit">
+  <div class="select-menu">
+      <h1>Consultation</h1>
+      <div class="selected">
+          <h3>Selected Medic: </h3>
+      </div>
+      <div class="medic-select-box">
+          <div class="options-container">
+              <div class="options active">
+                  <input type="radio" class="radio" id="physician" name="category">
+                  <label for="persons">Physician</label>
+              </div>
+              <div class="options">
+                  <input type="radio" class="radio" id="optician" name="category">
+                  <label for="persons">Optician</label>
+              </div>
+              <div class="options">
+                  <input type="radio" class="radio" id="psychiatrist" name="category">
+                  <label for="persons">Psychiatrist</label>
+              </div>
+              <div class="options">
+                  <input type="radio" class="radio" id="gynaecologist" name="category">
+                  <label for="persons">Gynaecologist</label>
+              </div>
+          </div>
+      </div>
   </div>
 </form>
 
