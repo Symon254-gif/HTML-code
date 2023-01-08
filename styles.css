@@ -11,8 +11,10 @@ form{
     align-items: center;
 }
 body{
-    background: linear-gradient(#163c62, #481665) no-repeat;
-    background-size: cover;
+    background: linear-gradient(#4897e7, #8911ce) no-repeat;
+    background-size: 100% 120%;
+    align-items: center;
+    height: 100vh;
 }
 input[type=password], input[type=email],input[type=text]{
     width: 200px;
@@ -56,6 +58,11 @@ button{
     cursor: pointer;
     width: 200px;
     border-radius: 5px;
+}
+.page-items button{
+    display: block;
+    margin-bottom: 20PX;
+    margin-left: 40%;
 }
 button:hover{
     opacity: 0.8;
@@ -178,39 +185,99 @@ h2, .sgn-up-and-forgot-email p{
         margin-left: 2%;
     }
 }
-.select-menu h1, .select-menu h3{
-    margin: 15px;
+/*Select medic tag styling*/
+#selection h1, .select, #selection h2, textarea, #selection input{
+    margin-left: 70px;
+    padding: 10px;
 }
-.medic-select-box{
-    display: flex;
-    width: 95%;
+
+#selection h1{
+    color: lightgreen;
 }
-.medic-select-box .options-container{
-    margin-left: 20px;
-    margin-bottom: 15px;
-    background: #7c26a4;
-    color: #cccccc;
-    opacity: 0;
-    width: 100%;
-    transition: all 0.5s;
+
+input[type=button], textarea{
+    display: block;
+    margin-bottom: 20px;
+}
+input[type=button] {
+    background-color: #04aa6d;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    /*padding: 1px 0px;*/
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+}
+textarea{
+    width: 20em;
+    height: 55px;
+    padding: 15px;
+    margin-top: 10px;
     border-radius: 6px;
-    overflow: hidden;
+    outline: none;
+    resize: none;
 }
-.medic-select-box .options, .selected{
-    padding: 12px 24px;
-    cursor: pointer;
+textarea::placeholder{
+    color: #b3b3b3;
 }
-.medic-select-box .options:hover{
-    background: #5296d5;
+textarea:is(:focus, :valid){
+    padding: 14px;
+    border: 2px solid #4671EA;
 }
-.medic-select-box label{
-    cursor: pointer;
+textarea::-webkit-scrollbar{
+    width: 0;
 }
-.medic-select-box .options .radio{
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #4b9de8 none;
+    flex: 1;
+    padding: 0 .5em;
+    color: #ffffff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
     display: none;
 }
-.medic-select-box.options-container.active{
-    max-height: 240px;
-    opacity: 1;
-    overflow-y: scroll;
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #4b9de8;
+    overflow: hidden;
+    border-radius: .25em;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+}
+.select:hover::after {
+    color: #23b499;
+}
+.page-items h1, .page-items h2, .page-items p{
+    text-align: center;
+    font-family: sans-serif;
+}
+.page-items h1{
+    color: #eea690;
+}
+.page-items p{
+    color: #481665;
 }

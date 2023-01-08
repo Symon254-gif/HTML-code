@@ -24,3 +24,4 @@ selectField.onclick = function (){
     list.classList.toggle('hide');
     arrowIcon.classList.toggle('rotate');
 }
+// Medic selection script

@@ -23,34 +23,22 @@
         </ul>
     </div>
 </nav>
-<form method="post">
-  <div class="select-menu">
-      <h1>Consultation</h1>
-      <div class="selected">
-          <h3>Selected Medic: </h3>
-      </div>
-      <div class="medic-select-box">
-          <div class="options-container">
-              <div class="options active">
-                  <input type="radio" class="radio" id="physician" name="category">
-                  <label for="persons">Physician</label>
-              </div>
-              <div class="options">
-                  <input type="radio" class="radio" id="optician" name="category">
-                  <label for="persons">Optician</label>
-              </div>
-              <div class="options">
-                  <input type="radio" class="radio" id="psychiatrist" name="category">
-                  <label for="persons">Psychiatrist</label>
-              </div>
-              <div class="options">
-                  <input type="radio" class="radio" id="gynaecologist" name="category">
-                  <label for="persons">Gynaecologist</label>
-              </div>
-          </div>
-      </div>
-  </div>
-</form>
 
+<form action="" method="post" id="selection">
+    <h1>Consultation Form</h1>
+    <div class="select">
+        <select id="format"
+                name="format">
+            <option selected disabled>Select the medic here</option>
+            <option value="physician">Physician</option>
+            <option value="psychiatrist">Psychiatrist</option>
+            <option value="Optician">Optician</option>
+            <option value="gynaecologist">Gynaecologist</option>
+        </select>
+    </div>
+    <h2>Describe your situation</h2>
+    <textarea id="textarea" name="textarea" placeholder="give a short description here"></textarea>
+    <input type="button" value="Submit My Information"><br>
+</form>
 </body>
 </html>
