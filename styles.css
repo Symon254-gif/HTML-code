@@ -5,7 +5,7 @@ form{
     display: flex;
     position: absolute;
     background-color: #300446;
-    margin: 15% 30% 70%;
+    margin: 10% 35% 70%;
     width: 31rem;
     border-radius: 10px;
     align-items: center;
@@ -50,7 +50,7 @@ input[type=password], input[type=email],input[type=text]{
     border-radius: 5px;
 
 }
-button{
+button, .button{
     background-color: #04aa6d;
     color: white;
     padding: 14px 20px;
@@ -59,7 +59,7 @@ button{
     width: 200px;
     border-radius: 5px;
 }
-.page-items button{
+.page-items .button{
     display: block;
     color: #300446;
     margin-bottom: 20PX;
@@ -68,6 +68,10 @@ button{
 }
 button:hover{
     opacity: 0.8;
+}
+#sign-in-form{
+    margin-left: 35%;
+    margin-top: 5%;
 }
 .imgcontainer h2{
     text-align: center;
@@ -238,10 +242,10 @@ select {
     outline:0;
     box-shadow:none;
     border:0!important;
-    background: #4b9de8 none;
+    background: white none;
     flex: 1;
     padding: 0 .5em;
-    color: #ffffff;
+    color: #ada7a7;
     cursor:pointer;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
@@ -252,11 +256,12 @@ select::-ms-expand {
 .select {
     position: relative;
     display: flex;
-    width: 20em;
+    width: 17em;
     height: 3em;
     line-height: 3;
-    background: #4b9de8;
+    /*background: rgba(204, 200, 200, 0.89);*/
     overflow: hidden;
+    background-color: white;
     border-radius: .25em;
 }
 .select::after {
@@ -283,9 +288,38 @@ select::-ms-expand {
 .page-items p{
     color: #481665;
 }
-#admin-page input{
-
+#admin-page input, #admin-page button, #admin-page h2{
+    margin-left: -60px;
 }
 .admin{
     width: 350px;
+}
+.task-container{
+    display: block;
+    position: absolute;
+    background-color: #300446;
+    margin: 15% 40% 70%;
+    width: 17rem;
+    border-radius: 10px;
+    align-items: center;
+}
+.task-container h3{
+    font-size: large;
+    font-family: sans-serif;
+    margin: 10px 30px;
+    color: #b0e11e;
+}
+.task-container button{
+    margin: 10px 30px;
+    transition: transform .2s;
+}
+.task-container button:hover{
+    opacity: 80%;
+    background-color: #6eafea;
+    transform: scale(1.1);
+}
+#med-reg{
+    width: 340px;
+    padding: 20px 0 20px 70px;
+    margin-left: 35%;
 }
