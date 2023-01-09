@@ -5,13 +5,13 @@ form{
     display: flex;
     position: absolute;
     background-color: #300446;
-    margin: 5% 30%;
+    margin: 15% 30% 70%;
     width: 31rem;
     border-radius: 10px;
     align-items: center;
 }
 body{
-    background: linear-gradient(#4897e7, #8911ce) no-repeat;
+    background: linear-gradient(#488de7, #a86ada) no-repeat;
     background-size: 100% 120%;
     align-items: center;
     height: 100vh;
@@ -61,8 +61,10 @@ button{
 }
 .page-items button{
     display: block;
+    color: #300446;
     margin-bottom: 20PX;
-    margin-left: 40%;
+    margin-left: 42%;
+    background-color: aqua;
 }
 button:hover{
     opacity: 0.8;
@@ -271,7 +273,7 @@ select::-ms-expand {
 .select:hover::after {
     color: #23b499;
 }
-.page-items h1, .page-items h2, .page-items p{
+.page-items h1, .page-items h2, .page-items p, .page-items h3{
     text-align: center;
     font-family: sans-serif;
 }
@@ -280,4 +282,10 @@ select::-ms-expand {
 }
 .page-items p{
     color: #481665;
+}
+#admin-page input{
+
+}
+.admin{
+    width: 350px;
 }
