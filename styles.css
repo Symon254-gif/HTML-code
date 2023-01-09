@@ -16,7 +16,7 @@ body{
     align-items: center;
     height: 100vh;
 }
-input[type=password], input[type=email],input[type=text]{
+input[type=password], input[type=email], input[type=text]{
     width: 200px;
     border-radius: 5px;
     padding: 12px 20px;
@@ -322,4 +322,35 @@ select::-ms-expand {
     width: 340px;
     padding: 20px 0 20px 70px;
     margin-left: 35%;
+}
+.student-task-select{
+    display: block;
+    position: absolute;
+    background-color: #300446;
+    margin: 15% 40% 70%;
+    width: 15rem;
+    border-radius: 10px;
+    align-items: center;
+}
+.student-task-select h2, .student-task-select .button{
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+.responses{
+    display: block;
+    position: absolute;
+    background-color: #300446;
+    margin: 15% 40% 70%;
+    width: 20rem;
+    border-radius: 10px;
+    align-items: center;
+}
+.responses table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px;
+    color: #111111;
+}
+.responses h2{
+    margin: 20px;
 }

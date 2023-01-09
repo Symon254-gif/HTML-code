@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="logo.png" type="image/png">
-    <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <title>Student-Options</title>
+    <title>Admin-Register Medic</title>
 </head>
 <body>
 <nav class="navbar">
@@ -24,10 +23,18 @@
         </ul>
     </div>
 </nav>
-<div class="student-task-select">
-    <h2>Select an option:</h2>
-    <input type="button" onclick="window.location.href='Select Medic.html';" value="Begin Consultation" class="button">
-    <input type="button" onclick="window.location.href='#';" value="View Responses" class="button">
+<div class="responses">
+<h2><strong>Responses Received</strong></h2>
+    <table border="1"style="overflow:scroll;
+                    background-color:#ADD8E6;
+                    border: 1px solid">
+        <tr style="background-color:#F0E68C">
+            <td>License No</td>
+            <td>Response</td>
+        </tr>
+        <?php include("getresponses.php"); ?>
+    </table>
 </div>
+
 </body>
 </html>
