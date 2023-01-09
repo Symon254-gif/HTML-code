@@ -345,12 +345,48 @@ select::-ms-expand {
     border-radius: 10px;
     align-items: center;
 }
-.responses table{
+.responses table,{
     width: 50%;
     border-collapse: collapse;
     margin: 20px;
     color: #111111;
 }
-.responses h2{
+.responses h2, .messages h2{
     margin: 20px;
+}
+.messages{
+    display: block;
+    position: absolute;
+    background-color: #300446;
+    margin: 5% 40% 70%;
+    width: 20rem;
+    border-radius: 10px;
+    align-items: center;
+}
+.messages table{
+    width: 75%;
+    border-collapse: collapse;
+    margin: 20px;
+    color: #111111;
+}
+.messages h3{
+    color: lightgreen;
+}
+.messages textarea, .messages input, .messages h3{
+    margin-left: 20px;
+    margin-top: -5px;
+}
+.messages input[type=button]{
+    padding: 10px;
+    margin-top: 5px;
+}
+.messages form{
+    display: block;
+    position: absolute;
+    background-color: #300446;
+    margin: 1% 0.4% 70%;
+    width: 20rem;
+    padding-top: 10px;
+    border-radius: 10px;
+    align-items: center;
 }
