@@ -454,3 +454,19 @@ select::-ms-expand {
     margin-left: 7%;
     margin-bottom: -5%;
 }
+.info-box{
+    display: flex;
+    position: absolute;
+    background-color: #300446;
+    margin: 10% 30%;
+    width: 35rem;
+    padding-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.info-box .box1 p, .info-box .box2 p{
+    font-family: sans-serif;
+    font-size: small;
+    color: #cccccc;
+}
