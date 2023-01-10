@@ -11,7 +11,7 @@ form{
     align-items: center;
 }
 body{
-    background: linear-gradient(#488de7, #a86ada) no-repeat;
+    background: linear-gradient(#a86ada, #488de7) no-repeat;
     background-size: 100% 120%;
     align-items: center;
     height: 100vh;
@@ -59,6 +59,31 @@ button, .button{
     width: 200px;
     border-radius: 5px;
 }
+.page-items{
+    display: flex;
+    position: absolute;
+    background-color: #300446;
+    margin: 10% 35% 70%;
+    width: 40rem;
+    border-radius: 10px;
+    align-items: center;
+}
+.about{
+    width: 50%;
+}
+.login-options{
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 50%;
+    height: 306px;
+    background-color: #29414d;
+}
+.login-options input[type=button]{
+    margin-left: 60px;
+}
+.about h2, .about h1{
+    font-size: medium;
+}
 .page-items .button{
     display: block;
     color: #300446;
@@ -82,7 +107,7 @@ button:hover{
     padding-top: 5%;
 }
 img.avatar{
-    width: 80px;
+    width: 100px;
     border-radius: 50px;
 }
 .container{
@@ -285,6 +310,12 @@ select::-ms-expand {
 .page-items h1{
     color: #eea690;
 }
+.page-items a{
+    text-decoration: none;
+    margin-left: 40%;
+    color: #b0e11e;
+}
+
 .page-items p{
     color: #481665;
 }
@@ -323,6 +354,11 @@ select::-ms-expand {
     padding: 20px 0 20px 70px;
     margin-left: 35%;
 }
+#med-reg .select{
+    margin-left: 0;
+    width: 74%;
+    height: 40px;
+}
 .student-task-select{
     display: block;
     position: absolute;
@@ -345,7 +381,7 @@ select::-ms-expand {
     border-radius: 10px;
     align-items: center;
 }
-.responses table,{
+.responses table{
     width: 50%;
     border-collapse: collapse;
     margin: 20px;
@@ -389,4 +425,32 @@ select::-ms-expand {
     padding-top: 10px;
     border-radius: 10px;
     align-items: center;
+}
+.deletion-div{
+    display: block;
+    position: absolute;
+    background-color: #300446;
+    margin: 11% 40%;
+    width: 20rem;
+    padding-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.deletion-div h3, .deletion-div button, .deletion-div input{
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+.deletion-div h3{
+    color: #b0e11e;
+    margin-left: 31%;
+}
+#medic-sign-in-form{
+    width: 28%;
+}
+#medic-sign-in-form .imgcontainer, #medic-sign-in-form .container{
+    margin-left: 20%;
+}
+#medic-sign-in-form .imgcontainer{
+    margin-left: 7%;
+    margin-bottom: -5%;
 }

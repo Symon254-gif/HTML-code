@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Home Page</title>
     <meta charset="UTF-8">
@@ -9,27 +9,20 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-<nav class="navbar">
-    <div class="brand-title"><p><img src="logo.png" alt="">Dekut Medical Website</p></div>
-    <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-        <ul>
-            <li><a href="Sign-up.html">Login</a></li>
-        </ul>
-    </div>
-</nav>
     <div class="page-items">
-        <h1>Welcome to Dekut Medical Consultation Website</h1>
-        <h2>For Your 24-Hour online Student Medical Consultation</h2>
-        <p>Get free consultation with our trusted medics</p><br>
-        <h3>Login as:</h3>
-        <input type="button" onclick="window.location.href='Sign-in.html';" value="Student" class="button">
-        <input type="button" onclick="window.location.href='#';" value="Medic" class="button">
-        <input type="button" onclick="window.location.href='Admin.html';" value="Admin" class="button">
+        <div class="about">
+            <h1>Welcome to Dekut Medical Consultation Website</h1>
+            <h2>For your 24-Hour Online Medical Consultation</h2>
+            <p>Get free consultation with our trusted medics. At Dekut we believe in empowering our students both academically and health-wise</p>
+            <p>Get free consultation with our trusted medics. At Dekut we believe in empowering our students both academically and health-wise</p>
+            <a href="Contacts.html">Contact Us</a>
+        </div>
+        <div class="login-options">
+            <h2>Login as:</h2>
+            <input type="button" onclick="window.location.href='Sign-in.html';" value="Student" class="button">
+            <input type="button" onclick="window.location.href='medic-sign-in.html';" value="Medic" class="button">
+            <input type="button" onclick="window.location.href='Admin.html';" value="Admin" class="button">
+        </div>
     </div>
 </body>
 </html>
