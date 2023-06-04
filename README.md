@@ -1,2 +1,2 @@
 # HTML-code
-Simple medica consoltatio website
+Simple medical consoltation website.
